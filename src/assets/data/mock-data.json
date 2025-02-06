@@ -1,0 +1,25 @@
+{
+  "user": {
+    "id": "7a0a1910-162e-45a5-9df0-ee91d1160621",
+    "name": "Ismael Souza",
+    "level": "Roxo",
+    "avatar": "assets/images/weightlifting.jpg"
+  },
+  "modalities": [
+    {
+      "id": "80da6c63-8164-49be-a611-0bcdaa11036a",
+      "title": "Levantamento de Peso",
+      "image": "assets/images/weightlifting.jpg"
+    },
+    {
+      "id": "9a7563dd-8a64-4746-89fa-a0df70ec422b",
+      "title": "Yoga Expression",
+      "image": "assets/images/yoga.jpg"
+    },
+    {
+      "id": "3b220d26-d6a6-412c-bc57-d6d5222932bb",
+      "title": "Pilates",
+      "image":"assets/images/pilates.jpg"
+    }
+  ]
+}

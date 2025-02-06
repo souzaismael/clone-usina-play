@@ -1,0 +1,13 @@
+<div class="modality-container" [ngClass]="{ 'card-action-effect': isCardWithAction }">
+  <img [src]="imageUrl" alt="">
+
+  <div *ngIf="!isCardWithAction" class="modality-title">
+    <span *ngIf="isCardWithTitleAndSubtitle">Continuar Treinando</span>
+    <p>{{ modality }}</p>
+  </div>
+
+  <div *ngIf="isCardWithAction" class="new-training-button">
+    <ion-icon name="add"></ion-icon>
+    <span>Novo <br> Treino</span>
+  </div>
+</div>

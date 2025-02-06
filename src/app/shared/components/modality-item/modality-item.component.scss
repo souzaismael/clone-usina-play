@@ -1,0 +1,91 @@
+
+.modality-container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  img {
+    filter: brightness(70%);
+    position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .new-training-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    ion-icon {
+      padding: 4px;
+      border: 1px solid;
+      border-radius: 10rem;
+      font-size: 2rem;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+  }
+
+  .modality-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1rem;
+    z-index: 100000000000000;
+
+    font-size: 1.25rem;
+
+    span {
+      font-size: 0.75rem;
+      color: var(--usina-orange-color);
+      text-transform: lowercase;
+    }
+
+    p {
+      text-transform: uppercase;
+    }
+
+    span,
+    p {
+      margin: 0;
+      line-height: 1;
+    }
+  }
+
+  img {
+    grid-area: modality;
+  }
+}
+
+.modality-container.card-action-effect::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, .8) 95%
+  );
+  z-index: 1;
+}
